@@ -1,0 +1,9 @@
+module robotics_benchmark_msgs {
+  module msg {
+    struct FixedNumericArray {
+      uint64 timestamp_ns;
+      uint32 sequence_number;
+      double values[36];
+    };
+  };
+};

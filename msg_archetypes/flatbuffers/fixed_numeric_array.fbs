@@ -1,9 +1,13 @@
 namespace robotics_numbers.msg_archetypes;
 
-struct FixedNumericArray {
+struct FixedNumericValues {
+  values:[double:36];
+}
+
+table FixedNumericArray {
   timestamp_ns:ulong;
   sequence:uint;
-  values:[double:36];
+  values:FixedNumericValues;
 }
 
 root_type FixedNumericArray;

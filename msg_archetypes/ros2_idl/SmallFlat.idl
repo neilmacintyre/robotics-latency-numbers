@@ -1,0 +1,13 @@
+module robotics_benchmark_msgs {
+  module msg {
+    struct SmallFlat {
+      uint64 timestamp_ns;
+      uint32 sequence_number;
+      float x;
+      float y;
+      float z;
+      double value;
+      boolean valid;
+    };
+  };
+};

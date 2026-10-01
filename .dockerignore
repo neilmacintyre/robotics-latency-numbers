@@ -1,0 +1,7 @@
+.git
+.cursor
+bin
+result*.csv
+result*.png
+__pycache__
+*.pyc

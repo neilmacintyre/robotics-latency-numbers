@@ -1,0 +1,9 @@
+#include "SmallFlat.idl"
+
+module robotics_benchmark_msgs {
+  module msg {
+    struct NestedListLevel2 {
+      sequence<SmallFlat> items;
+    };
+  };
+};

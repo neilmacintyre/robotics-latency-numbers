@@ -1,0 +1,9 @@
+#include "NestedListLevel2.idl"
+
+module robotics_benchmark_msgs {
+  module msg {
+    struct NestedListLevel1 {
+      sequence<NestedListLevel2> items;
+    };
+  };
+};
