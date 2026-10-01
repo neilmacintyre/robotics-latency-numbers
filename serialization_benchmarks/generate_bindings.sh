@@ -18,6 +18,7 @@ mkdir -p \
   "${python_root}/protobuf" \
   "${python_root}/flatbuffers" \
   "${python_root}/capnproto" \
+  "${python_root}/cstructs" \
   "${python_root}/ros/robotics_benchmark_msgs/_schemas"
 
 mapfile -t protobuf_schemas < <(
@@ -67,6 +68,7 @@ flatc \
   "${flatbuffer_schemas[@]}"
 
 cp "${schema_root}/cstructs/"*.h "${cpp_root}/cstructs/"
+cp "${schema_root}/cstructs/"*.py "${python_root}/cstructs/"
 
 mapfile -t ros2_idl_schemas < <(
   find "${schema_root}/ros2_idl" -maxdepth 1 -name '*.idl' -print | sort

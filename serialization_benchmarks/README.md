@@ -28,8 +28,8 @@ docker run --rm -it \
 Generated files are under `/opt/serialization_benchmarks/generated`:
 
 - `cpp/`: Protobuf, Cap'n Proto, FlatBuffers, Fast CDR, and C-struct code
-- `python/`: Protobuf and FlatBuffers modules, Cap'n Proto schemas, and the
-  standalone `robotics_benchmark_msgs` ROS typestore
+- `python/`: Protobuf, FlatBuffers, and `ctypes` modules, Cap'n Proto schemas,
+  and the standalone `robotics_benchmark_msgs` ROS typestore
 
 The entrypoint activates the Python environment and configures `PYTHONPATH`.
 
