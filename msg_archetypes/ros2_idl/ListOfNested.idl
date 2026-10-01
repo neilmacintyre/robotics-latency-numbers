@@ -1,0 +1,11 @@
+#include "SmallFlat.idl"
+
+module robotics_benchmark_msgs {
+  module msg {
+    struct ListOfNested {
+      uint64 timestamp_ns;
+      uint32 sequence_number;
+      sequence<SmallFlat> samples;
+    };
+  };
+};

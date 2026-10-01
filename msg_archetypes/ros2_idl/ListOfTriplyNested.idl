@@ -1,0 +1,11 @@
+#include "NestedListLevel1.idl"
+
+module robotics_benchmark_msgs {
+  module msg {
+    struct ListOfTriplyNested {
+      uint64 timestamp_ns;
+      uint32 sequence_number;
+      sequence<NestedListLevel1> items;
+    };
+  };
+};
