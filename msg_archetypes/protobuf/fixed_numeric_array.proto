@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package robotics_numbers.msg_archetypes;
+
+message FixedNumericArray {
+  uint64 timestamp_ns = 1;
+  uint32 sequence = 2;
+
+  // Producers and consumers must enforce exactly 36 elements.
+  repeated double values = 3 [packed = true];
+}

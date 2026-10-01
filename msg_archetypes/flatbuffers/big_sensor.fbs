@@ -1,0 +1,13 @@
+namespace robotics_numbers.msg_archetypes;
+
+table BigSensor {
+  timestamp_ns:ulong;
+  sequence:uint;
+  width:uint;
+  height:uint;
+  row_stride:uint;
+  encoding:string;
+  data:[ubyte];
+}
+
+root_type BigSensor;

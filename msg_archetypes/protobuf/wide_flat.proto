@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package robotics_numbers.msg_archetypes;
+
+message WideFlat {
+  uint64 timestamp_ns = 1;
+  uint32 sequence = 2;
+  double channel_00 = 3;
+  double channel_01 = 4;
+  double channel_02 = 5;
+  double channel_03 = 6;
+  double channel_04 = 7;
+  double channel_05 = 8;
+  double channel_06 = 9;
+  double channel_07 = 10;
+  double channel_08 = 11;
+  double channel_09 = 12;
+  double channel_10 = 13;
+  double channel_11 = 14;
+  double channel_12 = 15;
+  double channel_13 = 16;
+  double channel_14 = 17;
+  double channel_15 = 18;
+  double channel_16 = 19;
+  double channel_17 = 20;
+  double channel_18 = 21;
+  double channel_19 = 22;
+  double channel_20 = 23;
+  double channel_21 = 24;
+  double channel_22 = 25;
+  double channel_23 = 26;
+  double channel_24 = 27;
+  double channel_25 = 28;
+  double channel_26 = 29;
+  double channel_27 = 30;
+  double channel_28 = 31;
+  double channel_29 = 32;
+  double channel_30 = 33;
+  double channel_31 = 34;
+}

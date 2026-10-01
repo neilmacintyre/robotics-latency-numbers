@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package robotics_numbers.msg_archetypes;
+
+message SmallFlat {
+  uint64 timestamp_ns = 1;
+  uint32 sequence = 2;
+  float x = 3;
+  float y = 4;
+  float z = 5;
+  double value = 6;
+  bool valid = 7;
+}

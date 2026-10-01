@@ -1,0 +1,43 @@
+#ifndef ROBOTICS_NUMBERS_MSG_ARCHETYPES_WIDE_FLAT_H
+#define ROBOTICS_NUMBERS_MSG_ARCHETYPES_WIDE_FLAT_H
+
+#include <stdint.h>
+
+typedef struct {
+  uint64_t timestamp_ns;
+  uint32_t sequence;
+  double channel_00;
+  double channel_01;
+  double channel_02;
+  double channel_03;
+  double channel_04;
+  double channel_05;
+  double channel_06;
+  double channel_07;
+  double channel_08;
+  double channel_09;
+  double channel_10;
+  double channel_11;
+  double channel_12;
+  double channel_13;
+  double channel_14;
+  double channel_15;
+  double channel_16;
+  double channel_17;
+  double channel_18;
+  double channel_19;
+  double channel_20;
+  double channel_21;
+  double channel_22;
+  double channel_23;
+  double channel_24;
+  double channel_25;
+  double channel_26;
+  double channel_27;
+  double channel_28;
+  double channel_29;
+  double channel_30;
+  double channel_31;
+} WideFlat;
+
+#endif

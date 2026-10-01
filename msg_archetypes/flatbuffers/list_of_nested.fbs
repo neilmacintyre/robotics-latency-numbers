@@ -1,0 +1,11 @@
+include "small_flat.fbs";
+
+namespace robotics_numbers.msg_archetypes;
+
+table ListOfNested {
+  timestamp_ns:ulong;
+  sequence:uint;
+  samples:[SmallFlat];
+}
+
+root_type ListOfNested;

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package robotics_numbers.msg_archetypes;
+
+import "small_flat.proto";
+
+message ListOfNested {
+  uint64 timestamp_ns = 1;
+  uint32 sequence = 2;
+  repeated SmallFlat samples = 3;
+}

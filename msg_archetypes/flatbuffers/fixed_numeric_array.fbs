@@ -1,0 +1,9 @@
+namespace robotics_numbers.msg_archetypes;
+
+struct FixedNumericArray {
+  timestamp_ns:ulong;
+  sequence:uint;
+  values:[double:36];
+}
+
+root_type FixedNumericArray;

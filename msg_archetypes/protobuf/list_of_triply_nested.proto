@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package robotics_numbers.msg_archetypes;
+
+import "small_flat.proto";
+
+message NestedListLevel2 {
+  repeated SmallFlat items = 1;
+}
+
+message NestedListLevel1 {
+  repeated NestedListLevel2 items = 1;
+}
+
+message ListOfTriplyNested {
+  uint64 timestamp_ns = 1;
+  uint32 sequence = 2;
+  repeated NestedListLevel1 items = 3;
+}

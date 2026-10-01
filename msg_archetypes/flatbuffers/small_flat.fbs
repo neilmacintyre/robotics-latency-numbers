@@ -1,0 +1,13 @@
+namespace robotics_numbers.msg_archetypes;
+
+table SmallFlat {
+  timestamp_ns:ulong;
+  sequence:uint;
+  x:float;
+  y:float;
+  z:float;
+  value:double;
+  valid:bool;
+}
+
+root_type SmallFlat;

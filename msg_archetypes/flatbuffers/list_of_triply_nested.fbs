@@ -1,0 +1,19 @@
+include "small_flat.fbs";
+
+namespace robotics_numbers.msg_archetypes;
+
+table NestedListLevel2 {
+  items:[SmallFlat];
+}
+
+table NestedListLevel1 {
+  items:[NestedListLevel2];
+}
+
+table ListOfTriplyNested {
+  timestamp_ns:ulong;
+  sequence:uint;
+  items:[NestedListLevel1];
+}
+
+root_type ListOfTriplyNested;
