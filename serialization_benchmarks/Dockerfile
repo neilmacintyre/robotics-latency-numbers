@@ -45,6 +45,8 @@ RUN chmod +x \
         /opt/serialization_benchmarks/schemas \
         /opt/serialization_benchmarks/generated
 
+COPY serialization_benchmarks/python /opt/serialization_benchmarks/benchmarks/python
+
 ENV SERIALIZATION_BENCHMARK_ROOT=/opt/serialization_benchmarks
 ENV PATH=/opt/benchmark-venv/bin:${PATH}
 ENV PYTHONPATH=/opt/serialization_benchmarks/generated/python:/opt/serialization_benchmarks/generated/python/protobuf:/opt/serialization_benchmarks/generated/python/flatbuffers:/opt/serialization_benchmarks/generated/python/ros
